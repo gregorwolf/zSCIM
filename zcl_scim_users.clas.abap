@@ -41,10 +41,10 @@ CLASS ZCL_SCIM_USERS IMPLEMENTATION.
 
     CALL FUNCTION 'BAPI_USER_GETLIST'
       EXPORTING
-*       max_rows      =     " Maximum Number of Lines of Hits
+*        max_rows      =     " Maximum Number of Lines of Hits
         with_username = 'X'    " Read User with Name
-*  IMPORTING
-*       rows          =     " No. of users selected
+*     IMPORTING
+*        rows          =     " No. of users selected
       TABLES
 *       selection_range =     " Search for Users with a Ranges Table
 *       selection_exp =     " Search for Users with Free Selections
